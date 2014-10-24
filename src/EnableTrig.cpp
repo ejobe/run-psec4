@@ -42,9 +42,10 @@ main(int argc, char **argv){
     
     trigger.INT_TRIG_ENABLE(ENABLE, MASK);
     trigger.INT_TRIG_RESET();
-    //usleep(10000);
-    //trigger.SOFT_TRIG();
-    //trigger.Read(false);
+    if(ENABLE)
+      cout << "self-trigger ON, using channel " << MASK << endl;
+    else
+      cout << "self-trigger turned OFF " << endl;
     
     return 0;
   }

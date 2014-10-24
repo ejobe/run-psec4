@@ -45,8 +45,8 @@ main(int argc, char **argv){
 
     internal_trigger.USB_DEBUG((unsigned int)trig_threshold);
     internal_trigger.INT_TRIG_SETSIGN((bool)trig_sign);
-    cout << "threshold level set to " << (unsigned int)trig_threshold*1200/4096 << " mV !!\n\n";
-    
+    cout << "threshold level set to " << (unsigned int)trig_threshold*1200/4096 << " mV !!\n";
+
     //internal_trigger.INT_TRIG_RESET();
     //
     return 0;
